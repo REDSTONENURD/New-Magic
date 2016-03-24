@@ -1,0 +1,79 @@
+
+
+LavaColling
+    permission-name: fire
+    spell-class: ".targeted.ReplaceSpell"
+    range: 8
+    radius-up: 2
+    radius-down: 2
+    radius-horiz: 2
+    replace-blocks:
+        - lava
+    replace-with:
+        - obsidian
+    memory: 5
+    cost:
+        - 10 mana
+        - 2 flame_concoction
+    description: |
+            &rLavaColling 5 Memory Fire Spell
+            &3rColling lava to obsidian.
+    str-cost: 10 mana and 2 flame concoction.
+    cast-item: fire_staff
+    bindable: false
+    
+lava:
+    permission-name: fire
+    spell-class: ".targeted.MaterializeSpell"
+    cast-item: fire_staff,377
+    spell-icon: lava_bucket
+    cost:
+       - mana 10
+       - flame_concoction 4
+       - magma_cream 2 
+    prerequisites:
+       - scroll
+    memory: 2
+    allow-command-casting: false
+    cooldown: 120
+    range: 5
+    block-type: lava
+    apply-physics: true
+    description: |
+        &rLava  2 memory Fire school
+        &3Rises Lava from the core..
+    str-cast-self: "Summons Molten Lava"
+    str-cast-others: "%aSummons Molten Lava"
+
+fireball:
+    permission-name: fire
+    spell-class: ".targeted.FireballSpell"
+    cast-item: fire_staff
+    spell-icon: "351:1"
+    cost:
+        - mana 50
+        - blaze_powder 1
+        - flame_concoction 4
+    memory: 5
+    cooldown: 10
+    target-players: true
+    damage-multiplier: 2
+    description: |
+            &4Fireball: Lv05 Fire Spell
+            Launches a great ball of fiery destruction.
+            Requires the &4firestaff&3 spell.
+    str-cost: 50 mana, one blaze powder and fore flame concoction.
+    modifiers:
+        - world world_nether required
+    str-cast-self: "You summon a fiery flare!"
+    str-cast-others: "%a summons a fiery flare!"
+
+fire_nova:
+    permission-name: fire
+    spell-class: ".instant.FirenovaSpell"
+    cast-item: fire_staff,377
+    spell-icon: blaze_powder
+    cost:
+        - mana 50
+        - blaze_powder 1
+        - flame_concoction 4
