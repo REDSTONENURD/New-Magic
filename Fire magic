@@ -27,12 +27,13 @@ lava:
     spell-class: ".targeted.MaterializeSpell"
     cast-item: fire_staff,377
     spell-icon: lava_bucket
+    xp-granted:
+      - fire 1
     cost:
        - mana 10
        - flame_concoction 4
-       - magma_cream 2 
     prerequisites:
-       - scroll
+       - fire_concoction
     memory: 2
     allow-command-casting: false
     cooldown: 120
@@ -77,3 +78,27 @@ fire_nova:
         - mana 50
         - blaze_powder 1
         - flame_concoction 4
+
+
+extinguish:
+    permission-name: fire 
+    spell-class: ".targeted.ReplaceSpell"
+    xp-granted:
+      - fire -1 
+    cast-item: fire_staff
+    cost:
+        - mana 10
+        - flame_concotion 2
+    memory: 5
+    radius-down: 2
+    radius-horiz: 2
+    radius-up: 2
+    range: 8
+    replace-blocks:
+        - fire
+    replace-with:
+        - air
+    str-cost: "10 mana and 2 flame_concotion."
+    bindable: false
+    description: |
+            &rextinguish Fire   5 Memory fire Spell.
