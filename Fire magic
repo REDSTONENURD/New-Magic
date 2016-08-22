@@ -105,7 +105,7 @@ extinguish:
 
 flame_concotion:
       type: "351:1"
-      name: "&4Flame Concotion"
+      name: "&4Fire Concotion"
       lore:
         - "The Hotest Substance"
         - "known to Galdur"
