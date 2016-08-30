@@ -21,10 +21,10 @@ LavaCooling:
         - obsidian
     memory: 5
     cost:
-        - 10 mana
+        - mana 10
         - 2 flame_amalgam
     description: |
-            &rLavaColling 5 Memory Fire Spell
+            &rLavaCooling 5 Memory Fire Spell
             &3rCooling lava to obsidian.
     str-cost: 10 mana and 2 flame concoction.
     cast-item: fire_staff
