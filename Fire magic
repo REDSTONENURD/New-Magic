@@ -1,6 +1,6 @@
 
 
-LavaColling
+LavaCooling:
     permission-name: fire
     spell-class: ".targeted.ReplaceSpell"
     range: 8
@@ -17,7 +17,7 @@ LavaColling
         - 2 flame_amalgam
     description: |
             &rLavaColling 5 Memory Fire Spell
-            &3rColling lava to obsidian.
+            &3rCooling lava to obsidian.
     str-cost: 10 mana and 2 flame concoction.
     cast-item: fire_staff
     bindable: false
@@ -33,7 +33,7 @@ lava:
        - mana 10
        - flame_amalgam 4
     prerequisites:
-       - fire_concoction
+       - fire_amalgam
     memory: 2
     allow-command-casting: false
     cooldown: 120
@@ -63,7 +63,7 @@ fireball:
             &4Fireball: Lv05 Fire Spell
             Launches a great ball of fiery destruction.
             Requires the &4firestaff&3 spell.
-    str-cost: 50 mana, one blaze powder and fore flame concoction.
+    str-cost: 50 mana, one blaze powder and four flame amalgam.
     modifiers:
         - world world_nether required
     str-cast-self: "You summon a fiery flare!"
@@ -103,16 +103,16 @@ extinguish:
         - fire
     replace-with:
         - air
-    str-cost: "10 mana and 2 flame_concotion."
+    str-cost: "10 mana and 2 flame_amalgam."
     bindable: false
     description: |
-            &rextinguish Fire   5 Memory fire Spell.
+            &rExtinguish Fire   5 Memory fire Spell.
 
 flame_amalgam:
       type: "351:1"
       name: "&4Fire Amalgam"
       lore:
-        - "The Hotest Substance"
+        - "The Hottest Substance"
         - "known to Galdur"
         - "Used to harness the power of the Center Core"
 
@@ -134,6 +134,6 @@ fire_amalgam:
         - 87 4
         - 115 3
     description: |
-            &eFire Concoction: 1 Memory Fire Spell
-            Mixes a Flame concoction.
-    str-cost: "Add 3 Nether Wort, 1 Blaze Powder with 4 Netherrack, using 10 mana."
+            &eFire Amalgam: 1 Memory Fire Spell
+            Mixes a Flame amalgam.
+    str-cost: "Add 3 Nether wart, 1 Blaze Powder with 4 Netherrack, using 10 mana."
