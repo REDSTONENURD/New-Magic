@@ -14,7 +14,7 @@ LavaColling
     memory: 5
     cost:
         - 10 mana
-        - 2 flame_concoction
+        - 2 flame_amalgam
     description: |
             &rLavaColling 5 Memory Fire Spell
             &3rColling lava to obsidian.
@@ -31,7 +31,7 @@ lava:
       - fire 1
     cost:
        - mana 10
-       - flame_concoction 4
+       - flame_amalgam 4
     prerequisites:
        - fire_concoction
     memory: 2
@@ -54,7 +54,7 @@ fireball:
     cost:
         - mana 50
         - blaze_powder 1
-        - flame_concoction 4
+        - flame_amalgam 4
     memory: 5
     cooldown: 10
     target-players: true
@@ -77,7 +77,7 @@ fire_nova:
     cost:
         - mana 50
         - blaze_powder 1
-        - flame_concoction 4
+        - flame_amalgam 4
     xp-granted:
       - fire 1
     memory: 4
@@ -93,7 +93,7 @@ extinguish:
     cast-item: fire_staff
     cost:
         - mana 10
-        - flame_concotion 2
+        - flame_amalgam 2
     memory: 5
     radius-down: 2
     radius-horiz: 2
@@ -108,9 +108,9 @@ extinguish:
     description: |
             &rextinguish Fire   5 Memory fire Spell.
 
-flame_concotion:
+flame_amalgam:
       type: "351:1"
-      name: "&4Fire Concotion"
+      name: "&4Fire Amalgam"
       lore:
         - "The Hotest Substance"
         - "known to Galdur"
@@ -127,7 +127,7 @@ fire_amalgam:
       - fire 1
     memory: 1
     items:
-        - flame_concoction 4-6
+        - flame_amalgam 4-6
     cost:
         - mana 10
         - 377 1
