@@ -19,6 +19,8 @@ LavaCooling:
         - lava
     replace-with:
         - obsidian
+        xp-granted:
+      - fire -1
     memory: 5
     cost:
         - mana 10
@@ -44,8 +46,8 @@ lava:
        - fire_amalgam
     memory: 2
     allow-command-casting: false
-    cooldown: 120
-    range: 5
+    cooldown: 10
+    range: 10
     block-type: lava
     apply-physics: true
     description: |
@@ -64,6 +66,8 @@ fireball:
         - blaze_powder 1
         - flame_amalgam 4
     memory: 5
+        xp-granted:
+      - fire 1
     cooldown: 10
     target-players: true
     damage-multiplier: 2
@@ -72,8 +76,6 @@ fireball:
             Launches a great ball of fiery destruction.
             Requires the &4firestaff&3 spell.
     str-cost: 50 mana, one blaze powder and four flame amalgam.
-    modifiers:
-        - world world_nether required
     str-cast-self: "You summon a fiery flare!"
     str-cast-others: "%a summons a fiery flare!"
 
@@ -133,7 +135,7 @@ fire_amalgam:
         - mana 10
         - 377 1
         - 87 4
-        - 115 3
+        - 372 4
     description: |
             &eFire Amalgam: 1 Memory Fire Spell
             Mixes a Flame amalgam.
