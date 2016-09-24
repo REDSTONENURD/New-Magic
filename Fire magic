@@ -19,7 +19,7 @@ fireball:
     memory: 5
         xp-granted:
       - fire 1
-    cooldown: 10
+    cooldown: 5
     target-players: true
     damage-multiplier: 2
     description: |
