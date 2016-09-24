@@ -37,7 +37,7 @@ fire_nova:
     cast-item: fire_staff
     spell-icon: blaze_powder
     cost:
-        - mana 50
+        - mana 30
         - blaze_powder 1
         - flame_amalgam 4
     xp-granted:
@@ -45,6 +45,12 @@ fire_nova:
     memory: 4
     bindable: false
     can-cast-by-command: false
+    description: |
+            &4FireNova: Lv04 Fire Spell
+            Makes a ring of fire.
+    str-cost: 30 mana, one blaze powder and four flame amalgam.
+    str-cast-self: "You summon a Supper Nova!"
+    str-cast-others: "%a Crates a Super Nova!"
 
 
 extinguish:
