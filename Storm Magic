@@ -1,0 +1,18 @@
+Ice_Packing:
+    permission-name: storm
+    spell-class: ".instant.ConjureSpell"
+    cast-item: stormhammer
+    spell-icon: "212"
+    xp-granted:
+      - stone 1
+      - storm 1
+    memory: 1
+    items:
+        - packed_ice
+    cost:
+        - mana 20
+        - storm_amalgam 1 
+        - 79 4
+    description: |
+            &eIce Packing: 1 Memory storm Spell
+    str-cost: "Pack down 4 Ice to Packed Ice."
