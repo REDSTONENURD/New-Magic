@@ -8,6 +8,7 @@ predefined-items:
             - "Used to harness the power of the Center Core"
 
 fireball:
+    enabled: true
     permission-name: fire
     spell-class: ".targeted.FireballSpell"
     cast-item: fire_staff
@@ -17,9 +18,9 @@ fireball:
         - blaze_powder 1
         - flame_amalgam 4
     memory: 5
-        xp-granted:
+    xp-granted:
       - fire 1
-    cooldown: 5
+    cooldown: 10
     target-players: true
     damage-multiplier: 2
     description: |
